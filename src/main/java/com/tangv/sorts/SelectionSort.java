@@ -7,6 +7,8 @@ import org.junit.Test;
  * @author: tangwei
  * @Date: 2021/12/8 11:11
  * @Description: 选择排序
+ * 先设第一个数为最小，遍历后面所有数，和第一个数比较大小，如果比第一个数小则交换双方位置；一轮操作后，第一个数会是最小的数；
+ * 然后进行第二轮，重复以上操作，则第二个数会是最小的。
  */
 public class SelectionSort extends BaseTestEntity {
 
