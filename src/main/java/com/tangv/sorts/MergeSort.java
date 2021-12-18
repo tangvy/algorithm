@@ -20,20 +20,21 @@ public class MergeSort extends BaseTestEntity {
         int len = arr.length;
         int[] temp = new int[len];
         //将数组作拆分动作
-        dividedAsc(arr, 0, len - 1, temp);
+        dividedAsc(arr, 0, len - 1);
         return arr;
     }
 
-    public void dividedAsc(int[] arr, int left, int right, int[] temp) {
+    public void dividedAsc(int[] arr, int left, int right) {
         if (left < right) {
-            int middle = (right + left) >> 1;
-            dividedAsc(arr, left, middle, temp);
-            dividedAsc(arr, middle + 1, right, temp);
-            mergeAsc(arr,left, middle, right, temp);
+            int middle = left + ((right - left) >> 1);
+            dividedAsc(arr, left, middle);
+            dividedAsc(arr, middle + 1, right);
+            mergeAsc(arr,left, middle, right);
         }
     }
 
-    public void mergeAsc(int[] arr, int left, int middle, int right, int[] temp) {
+    public void mergeAsc(int[] arr, int left, int middle, int right) {
+        int[] temp = new int[right - left + 1];
         //左指针
         int i = left;
         //右指针
