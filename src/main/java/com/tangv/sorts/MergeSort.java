@@ -14,7 +14,6 @@ public class MergeSort extends BaseTestEntity {
     public void sort() {
         print(sortAsc(arr));
         print(sortDesc(arr));
-
     }
 
     public int[] sortAsc(int[] arr) {
