@@ -16,7 +16,7 @@ import org.springframework.test.context.web.WebAppConfiguration;
 @Slf4j
 public class BaseTestEntity {
 
-    public int[] arr = {10,43,2,439,56,76,108,67,2,23,244,43,98};
+    public int[] arr = {10,43,2,78,56,76,108,67,2,23,244,43,98};
 
     @Before
     public void init() {

@@ -26,8 +26,8 @@ public class GetMax extends BaseTestEntity {
             return arr[left];
         }
         int middle = left + ((right - left) >> 1);
-        int p0 = process(arr, 0, left);
-        int p1 = process(arr, left + 1, right);
+        int p0 = process(arr, 0, middle);
+        int p1 = process(arr, middle + 1, right);
         return p0 >= p1 ?p0 : p1;
     }
 }
