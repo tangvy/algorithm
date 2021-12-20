@@ -35,7 +35,7 @@ public class SmallSum extends BaseTestEntity {
             return 0;
         }
         int middle = left + ((right - left) >> 1);
-        return dividedAsc(arr, 0, middle)
+        return dividedAsc(arr, left, middle)
                 + dividedAsc(arr, middle + 1, right)
                 + merge(arr, left, middle, right);
     }
@@ -53,7 +53,6 @@ public class SmallSum extends BaseTestEntity {
                 res += (right - j + 1) * arr[i];
                 temp[t++] = arr[i++];
             } else {
-                res += 0;
                 temp[t++] = arr[j++];
             }
         }

@@ -28,7 +28,7 @@ public class SelectionSort extends BaseTestEntity {
         System.out.println("a = " + a + ", b = " + b);*/
         int a = 20;
         int b = 8;
-        swap(0, 1);
+        swap(arr,0, 1);
         print(arr);
         tempSwap(0,1);
         print(arr);
