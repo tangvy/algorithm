@@ -16,9 +16,7 @@ import org.springframework.test.context.web.WebAppConfiguration;
 @Slf4j
 public class BaseTestEntity {
 
-    //public int[] arr = {10,43,2,439,56,76,108,675,2,23,244,43,98};
-
-    public int[] arr = {3,3,4,2,5};
+    public int[] arr = {10,43,2,78,56,76,108,67,2,23,244,43,98};
 
     @Before
     public void init() {
@@ -32,7 +30,7 @@ public class BaseTestEntity {
         System.out.println();
     }
 
-    public void swap(int[] arr, int a, int b) {
+    public void swap(int a, int b) {
         arr[a] = arr[a]^arr[b];
         arr[b] = arr[a]^arr[b];
         arr[a] = arr[a]^arr[b];
